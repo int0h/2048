@@ -1,0 +1,55 @@
+.tile {
+    width: calc(1em - 0.1em);
+    height: calc(1em - 0.1em);
+    margin: 0.05em;
+    background: #eee;
+}
+
+.field {
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #aaa;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+    flex-direction: column;
+    font-family: helvetica;
+    align-items: center;
+    overflow: hidden;
+    font-size: 30px;
+}
+
+.tile.n-tile {
+    position: absolute;
+    background: hsl(33, 91%, 73%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.tile-label {
+    font-size: 0.3em;
+}
+
+.score {
+    margin-bottom: 30px;
+}
+
+button#undo {
+    width: 80%;
+    height: 50px;
+    margin: 15px;
+    font-size: 25px;
+}
+
+input#history {
+    width: 80%;
+    margin: 45px 15px 15px;
+}
